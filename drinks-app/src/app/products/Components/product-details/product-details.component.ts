@@ -12,11 +12,13 @@ export class ProductDetailsComponent implements OnInit {
   constructor(private service: ProductsService, private route: ActivatedRoute) { }
   productDetail!: DrinkDetails;
   productId: any;
+  showLoading: boolean = false;
   ngOnInit() {
-    console.log('route data ', this.route);
+    this.showLoading = true;
     this.route.paramMap.subscribe(data => {
       this.productId = data.get('id')
       this.service.getProductDetailsGetById(this.productId).subscribe(res => {
+        this.showLoading = false;
         this.productDetail = res.drinks[0];
       })
     });

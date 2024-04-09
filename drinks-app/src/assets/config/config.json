@@ -1,0 +1,44 @@
+{
+    "bgColor": {
+        "white": "#fff",
+        "light": "#fdffd5",
+        "dark": "#262626"
+    },
+    "colors": {
+        "primary": "#ffee9e",
+        "secondary": "#4285F4",
+        "info": "#70caf8",
+        "warning": "#fcb648",
+        "danger": "#fb1233"
+    },
+    "cardHeader": {
+        "cardPrimary": "bg-primary",
+        "cardSecondary": "bg-secondary",
+        "cardInfo": "bg-info",
+        "cardWarning": "bg-warning",
+        "cardDanger": "bg-danger"
+    },
+    "cardFooter": {
+        "cardPrimary": "bg-primary",
+        "cardSecondary": "bg-secondary",
+        "cardInfo": "bg-info",
+        "cardWarning": "bg-warning",
+        "cardDanger": "bg-danger"
+    },
+    "fonts": {
+        "heading": "Roboto",
+        "body": "Open Sans",
+        "size": {
+            "small": "14px",
+            "medium": "16px",
+            "large": "18px"
+        }
+    },
+    "logo": [
+        "assets/images/logo1.png"
+    ],
+    "api_endpoints": {
+        "drinks_list": "https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic",
+        "drink_details": "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i={drink_id}"
+    }
+}

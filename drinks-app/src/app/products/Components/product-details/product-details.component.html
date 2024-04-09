@@ -1,14 +1,29 @@
-
+<app-loading *ngIf="showLoading"></app-loading>
 <div class="container">
-    <div class="row" >
-        <div class="col-md-4 my-4" *ngIf="productDetail">
-            <div class="card card-warning">
-                <div class="card-header">{{productDetail.strDrink}}</div>
-                <div class="card-body">
-                    <img src="{{productDetail.strDrinkThumb}}" class="img-fluid"/>
-                </div>
-               
-            </div>
-        </div>
-    </div>
+  <div class="row">
+    <table class="table table-striped table-responsive">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Drink Name</th>
+          <th>Category</th>
+          <th>Alcoholic</th>
+          <th>Glass</th>
+          <th>Instructions</th>
+          <th>Ingredients</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="https://www.thecocktaildb.com/images/media/drink/l74qo91582480316.jpg" width="100"></td>
+          <td>A. J.</td>
+          <td>Ordinary Drink</td>
+          <td>Alcoholic</td>
+          <td>Cocktail glass</td>
+          <td>Shake ingredients with ice, strain into a cocktail glass, and serve.</td>
+          <td>Applejack (1 1/2 oz), Grapefruit juice (1 oz)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
