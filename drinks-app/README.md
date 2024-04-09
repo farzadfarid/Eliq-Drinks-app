@@ -94,7 +94,7 @@ The `config.json` file includes the following customizable settings:
         "drink_details": "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i={drink_id}"
     }
 }
-
+```
 ### Explanation:
 
 - **`titleStyle`**: Defines styles for titles in light and dark themes.
