@@ -7,7 +7,7 @@ import { ConfigServiceService } from 'src/app/products/Service/config-service.se
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  primaryColor!: string;
+  headerPageStyle!: string;
   secondaryColor!: string;
   logo!: string;
   isCollapsed = true;
@@ -15,7 +15,7 @@ export class HeaderComponent {
   constructor(private configService: ConfigServiceService) { }
   ngOnInit() {
     this.configService.getConfig().subscribe((config: any) => {
-      this.primaryColor = config.colors.primary;
+      this.headerPageStyle = config.headerPageStyle.headerPage;
       this.secondaryColor = config.colors.secondary;
       this.logo = config.logo[0];
     });

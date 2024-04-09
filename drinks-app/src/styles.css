@@ -32,3 +32,12 @@ h3 {
 .bg-light-header {
     background-color: #eae0d7 !important;
 }
+
+.linkStyle {
+    color: #262626 !important;
+    text-decoration: none !important;
+}
+
+.headerPage {
+    background-color: #c4aea1 !important;
+}

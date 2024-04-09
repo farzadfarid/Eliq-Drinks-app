@@ -4,16 +4,22 @@
         "dark": "darkStyle"
     },
     "bgColor": {
-        "white": "#fff",
         "light": "#fff",
         "dark": "#262626"
     },
+    "headerPageStyle": {
+        "headerPage": "headerPage"
+    },
     "colors": {
-        "primary": "#c4aea1",
-        "secondary": "#4285F4",
-        "info": "#70caf8",
-        "warning": "#fcb648",
-        "danger": "#fb1233"
+        "primary": "primary",
+        "secondary": "secondary",
+        "info": "info",
+        "warning": "warning",
+        "danger": "danger",
+        "linkStyle": "linkStyle"
+    },
+    "links": {
+        "linkStyle": "linkStyle"
     },
     "cardHeader": {
         "cardPrimary": "bg-primary",

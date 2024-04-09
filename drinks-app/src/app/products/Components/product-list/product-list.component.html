@@ -7,12 +7,12 @@
     <hr />
     <div class="col-md-4 my-4" *ngFor="let product of lstProducts">
       <div class="card">
-        <div class="card-header pt-2 pb-4" [ngClass]="headerPanel">
-          <a [routerLink]="['/productDetails',product.idDrink]">
+        <div class="card-header pt-3 pb-4" [ngClass]="headerPanel">
+          <a [ngClass]="linkStyle" [routerLink]="['/productDetails',product.idDrink]">
             <i class="fa-solid fa-eye"></i> {{product.strDrink}}
           </a>
         </div>
-        <img src="{{product.strDrinkThumb}}" class="card-img-bottom" />
+        <a [routerLink]="['/productDetails',product.idDrink]"><img src="{{product.strDrinkThumb}}" class="card-img-bottom" /></a>
       </div>
     </div>
   </div>
