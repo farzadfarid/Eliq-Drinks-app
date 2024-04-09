@@ -98,22 +98,22 @@ The `config.json` file includes the following customizable settings:
 ### Explanation:
 
 - **`titleStyle`**: Defines styles for titles in light and dark themes.
-    - `light`: CSS class for titles in light theme.
-    - `dark`: CSS class for titles in dark theme.
+  - `light`: CSS class for titles in light theme.
+  - `dark`: CSS class for titles in dark theme.
 
 - **`bgColor`**: Defines background colors for light and dark themes.
-    - `light`: Background color in light theme.
-    - `dark`: Background color in dark theme.
+  - `light`: Background color in light theme.
+  - `dark`: Background color in dark theme.
 
 - **`headerPageStyle`**: Defines styles for the header page.
-    - `headerPage`: CSS class for the header page.
+  - `headerPage`: CSS class for the header page.
 
 - **`colors`**: Defines color styles for various UI elements.
-    - `primary`, `secondary`, `info`, `warning`, `danger`: CSS classes for different color styles.
-    - `linkStyle`: CSS class for links.
+  - `primary`, `secondary`, `info`, `warning`, `danger`: CSS classes for different color styles.
+  - `linkStyle`: CSS class for links.
 
 - **`links`**: Defines styles for links.
-    - `linkStyle`: CSS class for links.
+  - `linkStyle`: CSS class for links.
 
 - **`cardHeader`**: Defines background colors for card headers.
   - `cardPrimary`, `cardSecondary`, `cardInfo`, `cardWarning`, `cardDanger`: CSS classes for different card header colors.
@@ -133,6 +133,7 @@ The `config.json` file includes the following customizable settings:
   - `drinks_list`: Endpoint for retrieving a list of alcoholic drinks.
   - `drink_details`: Endpoint for retrieving details of a specific drink by ID.
     - Note: `{drink_id}` should be replaced with the actual ID of the drink.
+
 
 ## Feedback
 
