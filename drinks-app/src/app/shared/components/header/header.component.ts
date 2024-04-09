@@ -10,6 +10,7 @@ export class HeaderComponent {
   primaryColor!: string;
   secondaryColor!: string;
   logo!: string;
+  isCollapsed = true;
 
   constructor(private configService: ConfigServiceService) { }
   ngOnInit() {

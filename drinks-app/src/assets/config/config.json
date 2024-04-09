@@ -1,11 +1,15 @@
 {
+    "titleStyle": {
+        "light": "lightStyle",
+        "dark": "darkStyle"
+    },
     "bgColor": {
         "white": "#fff",
-        "light": "#fdffd5",
+        "light": "#fff",
         "dark": "#262626"
     },
     "colors": {
-        "primary": "#ffee9e",
+        "primary": "#c4aea1",
         "secondary": "#4285F4",
         "info": "#70caf8",
         "warning": "#fcb648",
@@ -15,7 +19,7 @@
         "cardPrimary": "bg-primary",
         "cardSecondary": "bg-secondary",
         "cardInfo": "bg-info",
-        "cardWarning": "bg-warning",
+        "cardWarning": "bg-light-header",
         "cardDanger": "bg-danger"
     },
     "cardFooter": {
@@ -29,9 +33,9 @@
         "heading": "Roboto",
         "body": "Open Sans",
         "size": {
-            "small": "14px",
-            "medium": "16px",
-            "large": "18px"
+            "small": "fontSizeSmall",
+            "medium": "fontSizeMedium",
+            "large": "fontSizeLrge"
         }
     },
     "logo": [

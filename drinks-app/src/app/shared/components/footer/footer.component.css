@@ -1,0 +1,38 @@
+.footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./../../../../assets/images/footer-bg.jpg') center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer .footer-item a.btn-link,
+.footer .footer-item p {
+    line-height: 35px;
+    font-size: 17px;
+    color: white;
+    transition: 0.5s;
+}
+
+.footer .footer-item a.btn-link:hover {
+    color: red;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 992px) {
+
+    .footer .text-start,
+    .footer .text-center,
+    .footer .text-end {
+        text-align: center !important;
+    }
+}
+
+/*** Footer End ***/
+
+
+/*** copyright Start ***/
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: #000 !important;
+}
+
+/*** copyright end ***/

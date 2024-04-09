@@ -1,29 +1,357 @@
 <app-loading *ngIf="showLoading"></app-loading>
-<div class="container">
-  <div class="row">
-    <table class="table table-striped table-responsive">
-      <thead>
-        <tr>
-          <th>Image</th>
-          <th>Drink Name</th>
-          <th>Category</th>
-          <th>Alcoholic</th>
-          <th>Glass</th>
-          <th>Instructions</th>
-          <th>Ingredients</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><img src="https://www.thecocktaildb.com/images/media/drink/l74qo91582480316.jpg" width="100"></td>
-          <td>A. J.</td>
-          <td>Ordinary Drink</td>
-          <td>Alcoholic</td>
-          <td>Cocktail glass</td>
-          <td>Shake ingredients with ice, strain into a cocktail glass, and serve.</td>
-          <td>Applejack (1 1/2 oz), Grapefruit juice (1 oz)</td>
-        </tr>
-      </tbody>
-    </table>
+<div class="container my-5" *ngIf="productDetail" [ngClass]="fontsStyle">
+  <div class="row text-start">
+    <div class="col-md-12 text-center my-3">
+      <h2 [ngClass]="titleStyle">{{productDetail.strDrink}}</h2>
+    </div>
+    <hr>
+    <div class="col-md-7">
+      <dl class="row">
+        <ng-container *ngIf="productDetail.strCategory">
+          <dt class="col-sm-3">
+            Category
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strCategory}}
+          </dd>
+        </ng-container>
+
+        <ng-container *ngIf="productDetail.strDrinkAlternate">
+          <dt class="col-sm-3">
+            Drink Alternate
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strDrinkAlternate}}
+          </dd>
+        </ng-container>
+
+        <ng-container *ngIf="productDetail.strIBA">
+          <dt class="col-sm-3">
+            IBA
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strIBA}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strAlcoholic">
+          <dt class="col-sm-3">
+            Alcoholic
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strAlcoholic}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strGlass">
+          <dt class="col-sm-3">
+            Glass
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strGlass}}
+          </dd>
+        </ng-container>
+
+        <ng-container *ngIf="productDetail.strIngredient1">
+          <dt class="col-sm-3">
+            Ingredient 1
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strIngredient1}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strIngredient2">
+          <dt class="col-sm-3">
+            Ingredient 2
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strIngredient2}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strIngredient3">
+          <dt class="col-sm-3">
+            Ingredient 3
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strIngredient3}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strIngredient4">
+          <dt class="col-sm-3">
+            Ingredient 4
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strIngredient4}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strIngredient5">
+          <dt class="col-sm-3">
+            Ingredient 5
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strIngredient5}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strIngredient6">
+          <dt class="col-sm-3">
+            Ingredient 6
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strIngredient6}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strIngredient7">
+          <dt class="col-sm-3">
+            Ingredient 7
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strIngredient7}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strIngredient8">
+          <dt class="col-sm-3">
+            Ingredient 8
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strIngredient8}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strIngredient9">
+          <dt class="col-sm-3">
+            Ingredient 9
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strIngredient9}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strIngredient10">
+          <dt class="col-sm-3">
+            Ingredient 10
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strIngredient10}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strIngredient11">
+          <dt class="col-sm-3">
+            Ingredient 11
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strIngredient11}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strIngredient12">
+          <dt class="col-sm-3">
+            Ingredient 12
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strIngredient12}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strIngredient13">
+          <dt class="col-sm-3">
+            Ingredient 13
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strIngredient13}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strIngredient14">
+          <dt class="col-sm-3">
+            Ingredient 14
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strIngredient14}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strIngredient15">
+          <dt class="col-sm-3">
+            Ingredient 15
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strIngredient15}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strMeasure1">
+          <dt class="col-sm-3">
+            Measure 1
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strMeasure1}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strMeasure2">
+          <dt class="col-sm-3">
+            Measure 2
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strMeasure2}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strMeasure3">
+          <dt class="col-sm-3">
+            Measure 3
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strMeasure3}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strMeasure4">
+          <dt class="col-sm-3">
+            Measure 4
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strMeasure4}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strMeasure5">
+          <dt class="col-sm-3">
+            Measure 5
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strMeasure5}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strMeasure6">
+          <dt class="col-sm-3">
+            Measure 6
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strMeasure6}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strMeasure7">
+          <dt class="col-sm-3">
+            Measure 7
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strMeasure7}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strMeasure8">
+          <dt class="col-sm-3">
+            Measure 8
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strMeasure8}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strMeasure9">
+          <dt class="col-sm-3">
+            Measure 9
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strMeasure9}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strMeasure10">
+          <dt class="col-sm-3">
+            Measure 10
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strMeasure10}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strMeasure11">
+          <dt class="col-sm-3">
+            Measure 11
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strMeasure11}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strMeasure12">
+          <dt class="col-sm-3">
+            Measure 12
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strMeasure12}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strMeasure13">
+          <dt class="col-sm-3">
+            Measure 13
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strMeasure13}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strMeasure14">
+          <dt class="col-sm-3">
+            Measure 14
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strMeasure14}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strMeasure15">
+          <dt class="col-sm-3">
+            Measure 15
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strMeasure15}}
+          </dd>
+        </ng-container>
+
+        <h3>Instructions</h3>
+        <hr>
+        <ng-container *ngIf="productDetail.strInstructions">
+          <dt class="col-sm-3">
+            Instructions
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strInstructions}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strInstructionsES">
+          <dt class="col-sm-3">
+            Instructions ES
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strInstructionsES}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strInstructionsDE">
+          <dt class="col-sm-3">
+            Instructions DE
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strInstructionsDE}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strInstructionsFR">
+          <dt class="col-sm-3">
+            Instructions FR
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strInstructionsFR}}
+          </dd>
+        </ng-container>
+        <ng-container *ngIf="productDetail.strInstructionsIT">
+          <dt class="col-sm-3">
+            Instructions IT
+          </dt>
+          <dd class="col-sm-9">
+            {{productDetail.strInstructionsIT}}
+          </dd>
+        </ng-container>
+
+      </dl>
+    </div>
+    <div class="col-md-5 text-right">
+      <img [src]="productDetail.strDrinkThumb" class="img-thumbnail" />
+      <video [src]="productDetail.strVideo"></video>
+    </div>
+
   </div>
+  <div class="row text-start">
+
+  </div>
+
+  <!-- There are tages -->
+  <ng-container *ngIf="productDetail.strTags">
+    <div class="row my-5">
+      <div class="col-md-2">
+        <span class="badge bg-secondary">{{productDetail.strTags}}</span>
+      </div>
+    </div>
+  </ng-container>
 </div>

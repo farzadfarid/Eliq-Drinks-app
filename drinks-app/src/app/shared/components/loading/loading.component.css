@@ -117,7 +117,7 @@
 .loading-spinner {
     position: fixed;
     width: 20vw;
-    left: 35vw;
+    left: 40vw;
     top: 30%;
     z-index: 99;
     background-color: #fff;

@@ -2,20 +2,17 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12 text-center my-4">
-      <h3>Products</h3>
+      <h2 [ngClass]="titleStyle">Products</h2>
     </div>
     <hr />
     <div class="col-md-4 my-4" *ngFor="let product of lstProducts">
       <div class="card">
-        <div class="card-header" [ngClass]="headerPanel">{{product.strDrink}}</div>
-        <div class="card-body">
-          <img src="{{product.strDrinkThumb}}" class="img-fluid" />
-        </div>
-        <div class="card-footer" [ngClass]="cardFooter">
+        <div class="card-header pt-2 pb-4" [ngClass]="headerPanel">
           <a [routerLink]="['/productDetails',product.idDrink]">
-            <i class="fa-solid fa-eye"></i> See More
+            <i class="fa-solid fa-eye"></i> {{product.strDrink}}
           </a>
         </div>
+        <img src="{{product.strDrinkThumb}}" class="card-img-bottom" />
       </div>
     </div>
   </div>

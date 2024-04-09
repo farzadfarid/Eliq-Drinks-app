@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+.darkStyle {
+    background-color: #7a6960;
+    color: #fff;
+}
+
+.lightStyle {
+    background-color: #fff;
+    color: #000;
+}
+
+h1,
+h2,
+h3 {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fontSizeSmall {
+    font-size: 14px !important;
+}
+
+.fontSizeMedium {
+    font-size: 16px !important;
+}
+
+.fontSizeLarge {
+    font-size: 18px !important;
+}
+
+.bg-light-header {
+    background-color: #eae0d7 !important;
+}
