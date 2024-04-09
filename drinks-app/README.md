@@ -1,16 +1,16 @@
-# Elik Application
+# Eliq Application
 
 ## Overview
 
-Elik is an application designed for receiving beverage products from a server using a White-Label App (WLA) approach. The application comprises two main pages: one displaying all available products and another providing detailed information about specific products.
+Eliq is an application designed for receiving beverage products from a server using a White-Label App (WLA) approach. The application comprises two main pages: one displaying all available products and another providing detailed information about specific products.
 
 ## Customization via config.json
 
-To facilitate user interface (UI) customization, Elik employs a `config.json` file. This file contains settings for personalizing various aspects of the application's appearance. By modifying this configuration file, customers can easily tailor their pages according to their preferences.
+To facilitate user interface (UI) customization, Eliq employs a `config.json` file. This file contains settings for personalizing various aspects of the application's appearance. By modifying this configuration file, customers can easily tailor their pages according to their preferences.
 
 ## Usage
 
-To use Elik, follow these steps:
+To use Eliq, follow these steps:
 
 1. Clone this repository.
 2. Install dependencies using `npm install`.
@@ -137,7 +137,7 @@ The `config.json` file includes the following customizable settings:
 
 ## Feedback
 
-We welcome any feedback or suggestions for improving Elik. Please feel free to open an issue or submit a pull request.
+We welcome any feedback or suggestions for improving Eliq. Please feel free to open an issue or submit a pull request.
 
 ## License
 
