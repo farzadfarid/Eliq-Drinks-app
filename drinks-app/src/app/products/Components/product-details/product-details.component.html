@@ -5,6 +5,11 @@
       <h2 [ngClass]="titleStyle">{{productDetail.strDrink}}</h2>
     </div>
     <hr>
+    <div class="col-md-5 text-right">
+      <img [src]="productDetail.strDrinkThumb" class="img-thumbnail" />
+      <video [src]="productDetail.strVideo"></video>
+    </div>
+
     <div class="col-md-7">
       <dl class="row">
         <ng-container *ngIf="productDetail.strCategory">
@@ -336,13 +341,6 @@
 
       </dl>
     </div>
-    <div class="col-md-5 text-right">
-      <img [src]="productDetail.strDrinkThumb" class="img-thumbnail" />
-      <video [src]="productDetail.strVideo"></video>
-    </div>
-
-  </div>
-  <div class="row text-start">
 
   </div>
 
